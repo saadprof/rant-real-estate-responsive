@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
@@ -11,6 +17,97 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Real Estate Resp</title>
+
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+        }
+        .primary-400{
+            color: #6E80B4;
+        }
+        .primary-500{
+            color: #4A60A1;
+        }
+        .primary-700{
+            color: #2C3A61;
+        }
+        .primary-800{
+            color: #1E2640;
+        }
+        .gray-400{
+            color: #889099;
+        }
+        .gray-500{
+            color: #6D737A;
+        }
+        .gray-700{
+            color: #363A3D;
+        }
+    </style>
   </head>
-  <body></body>
+  <body>
+
+    <!-- Header for nav and header banner -->
+    <header>
+
+      <!-- navbar -->
+        <div class="flex items-center bg-base-100 md:px-10 py-5 md:justify-between">
+            <div class="flex gap-14">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                    </svg>
+                    </label>
+                    <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                    >
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="images/icons/HouseLine.png" alt="" />
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold text-[primary-500]">REIS</h3>
+                        <p class="text-sm font-medium text-[primary-500]">Real Estate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Our Clients</a></li>
+                    <li><a>Properties</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Main for main contents -->
+    <main></main>
+
+    <!-- Footer for contact form and other social links -->
+    <footer></footer>
+  </body>
 </html>
